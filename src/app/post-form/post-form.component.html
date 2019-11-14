@@ -1,0 +1,12 @@
+<form (ngSubmit)="submitPost()">
+  <label
+    >Title: <input [(ngModel)]="newPost.title" class="titleThought" name="title"
+  /></label>
+  <label
+    >Thought:
+    <input [(ngModel)]="newPost.thought" name="thought" class="thoughtInput"
+  /></label>
+  <button>Submit</button>
+</form>
+
+<!-- must always have a name for data binding [(ngModel)] -->
